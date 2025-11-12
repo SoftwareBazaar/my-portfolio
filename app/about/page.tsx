@@ -18,11 +18,11 @@ export default function AboutPage() {
         <div className="mb-8">
           <h2 className="text-3xl font-semibold text-foreground">Professional Story</h2>
           <p className="mt-4 text-lg leading-relaxed text-foreground-secondary">
-            I'm a developer, founder, and writer passionate about building impactful
-            solutions. With years of experience in software development, I've worked on
-            everything from small startups to large-scale applications. My journey has
-            been driven by curiosity, continuous learning, and the desire to solve
-            real-world problems through technology.
+            I&apos;m an algorithmic trader, fintech engineer, and writer crafting institutional-grade
+            tooling for multi-asset desks. I began in agricultural education and extension—designing
+            knowledge systems for rural producers—before pivoting into finance technologies. Today I
+            architect platforms like SmartAlgos, build MT5 expert advisors, and document the journey
+            through thoughtful research and actionable articles.
           </p>
         </div>
 
@@ -31,11 +31,10 @@ export default function AboutPage() {
             Background & Experience
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-foreground-secondary">
-            I've spent the last several years honing my skills across the full stack,
-            from frontend frameworks like React and Next.js to backend systems using
-            Node.js and Python. Along the way, I've founded multiple companies, each
-            teaching me valuable lessons about product development, team building, and
-            business strategy.
+            My cross-disciplinary background combines agricultural systems thinking with quantitative
+            analysis. Over the years I&apos;ve evolved from education programmes to trading floors—leading
+            engineering and research for algorithmic desks, consulting for fintech startups, and
+            creating machine learning trading agents that adapt to market microstructure.
           </p>
         </div>
 
@@ -47,17 +46,17 @@ export default function AboutPage() {
               <ul className="mt-2 list-disc space-y-1 pl-6 text-foreground-secondary">
                 <li>React & Next.js</li>
                 <li>TypeScript</li>
-                <li>Tailwind CSS</li>
-                <li>Responsive Design</li>
+                <li>Tailwind CSS & Design Systems</li>
+                <li>Electron desktop integrations</li>
               </ul>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-foreground">Backend</h3>
               <ul className="mt-2 list-disc space-y-1 pl-6 text-foreground-secondary">
                 <li>Node.js & Express</li>
-                <li>Python & Django</li>
-                <li>PostgreSQL & MongoDB</li>
-                <li>RESTful APIs</li>
+                <li>Python data pipelines</li>
+                <li>MongoDB, PostgreSQL & Redis</li>
+                <li>RESTful & WebSocket APIs</li>
               </ul>
             </div>
           </div>
@@ -66,11 +65,10 @@ export default function AboutPage() {
         <div className="mb-8">
           <h2 className="text-3xl font-semibold text-foreground">Values & Approach</h2>
           <p className="mt-4 text-lg leading-relaxed text-foreground-secondary">
-            I believe in writing clean, maintainable code and building products that
-            truly serve their users. My approach combines technical excellence with
-            user-centric design, always keeping the end goal in mind. I'm passionate
-            about sharing knowledge through writing and contributing to the open-source
-            community.
+            I balance quantitative rigour with empathy for the operators using the tools.
+            Every build starts with risk management, observability, and documentation baked in.
+            Writing is central to my process—I craft investor briefs, product manuals, and academic
+            pieces that demystify complex technology for stakeholders.
           </p>
         </div>
 

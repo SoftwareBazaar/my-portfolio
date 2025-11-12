@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 import { ExternalLink } from "lucide-react";
 import { getAllCompanies } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Companies",
-  description: "Companies I've founded and built",
+  description: "Companies I&apos;ve founded and built",
 };
 
 export default async function CompaniesPage() {
@@ -16,7 +17,7 @@ export default async function CompaniesPage() {
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold text-foreground sm:text-5xl">Companies</h1>
         <p className="mt-4 text-lg text-foreground-secondary">
-          Ventures I've founded and built throughout my career
+          Ventures I&apos;ve founded and built throughout my career
         </p>
       </div>
 
@@ -28,18 +29,20 @@ export default async function CompaniesPage() {
         </div>
       ) : (
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {companies.map((company) => (
+          {companies.map((company) => {
+            const logoSrc = company.logo || "/images/placeholders/company-placeholder.svg";
+            return (
             <Card key={company.slug} href={`/companies/${company.slug}`}>
               <div className="flex h-full flex-col">
-                {company.logo && (
-                  <div className="mb-4 flex h-16 items-center">
-                    <img
-                      src={company.logo}
-                      alt={company.name}
-                      className="h-full object-contain"
-                    />
-                  </div>
-                )}
+                <div className="relative mb-4 flex h-16 w-full items-center">
+                  <Image
+                    src={logoSrc}
+                    alt={company.name}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                  />
+                </div>
                 <div className="flex flex-1 flex-col">
                   <h3 className="mb-2 text-xl font-semibold text-foreground">
                     {company.name}
@@ -79,7 +82,7 @@ export default async function CompaniesPage() {
                 </div>
               </div>
             </Card>
-          ))}
+          );})}
         </div>
       )}
     </div>

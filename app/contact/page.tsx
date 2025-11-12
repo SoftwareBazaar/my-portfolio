@@ -49,7 +49,7 @@ export default function ContactPage() {
           Get in Touch
         </h1>
         <p className="mt-4 text-lg text-foreground-secondary">
-          Have a project in mind or want to collaborate? I'd love to hear from you.
+          Have a project in mind or want to collaborate? I&apos;d love to hear from you.
         </p>
       </div>
 
@@ -66,23 +66,57 @@ export default function ContactPage() {
               <div>
                 <p className="font-medium text-foreground">Email</p>
                 <a
-                  href="mailto:your@email.com"
+                  href="mailto:softwarebazaar.ke@gmail.com"
                   className="text-foreground-secondary transition-colors hover:text-primary"
                 >
-                  your@email.com
+                  softwarebazaar.ke@gmail.com
                 </a>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <span className="text-base font-semibold">WA</span>
+              </div>
+              <div>
+                <p className="font-medium text-foreground">WhatsApp</p>
+                <a
+                  href="https://wa.me/254746054224"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground-secondary transition-colors hover:text-primary"
+                >
+                  +254 746 054 224
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <span className="text-base font-semibold">⏰</span>
+              </div>
+              <div>
+                <p className="font-medium text-foreground">Consulting Rate</p>
+                <p className="text-foreground-secondary">$10/hour · Remote & Hybrid engagements</p>
               </div>
             </div>
           </div>
 
           <div className="mt-8">
             <h3 className="mb-4 text-lg font-semibold text-foreground">
-              Availability
+              Availability & Bookings
             </h3>
             <p className="text-foreground-secondary">
-              I'm currently available for new projects and collaborations. Feel free
-              to reach out and I'll get back to you within 24-48 hours.
+              I&apos;m currently available for algorithmic trading builds, fintech product consulting,
+              and article/academic writing. Book a 30-minute discovery call via Calendly or send a
+              message—I&apos;ll respond within 24 hours.
             </p>
+            <a
+              href="https://calendly.com/johnwanyaga37/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary/90"
+            >
+              Book on Calendly
+            </a>
           </div>
         </div>
 

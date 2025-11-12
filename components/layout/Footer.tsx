@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub" },
-  { href: "https://twitter.com", icon: Twitter, label: "Twitter" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "mailto:your@email.com", icon: Mail, label: "Email" },
+  { href: "https://github.com/SoftwareBazaar", icon: Github, label: "GitHub" },
+  { href: "https://x.com/TheSelectMan73", icon: Twitter, label: "X (Twitter)" },
+  { href: "https://www.linkedin.com/in/john-wanyaga-9b2a72367", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://wa.me/254746054224", icon: MessageCircle, label: "WhatsApp" },
+  { href: "mailto:softwarebazaar.ke@gmail.com", icon: Mail, label: "Email" },
 ];
 
 export function Footer() {
@@ -19,7 +20,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold text-foreground">Portfolio</h3>
             <p className="mt-2 text-sm text-foreground-secondary">
-              Developer, Founder, and Writer
+              Algorithmic trader, fintech builder, and writer
             </p>
           </div>
 

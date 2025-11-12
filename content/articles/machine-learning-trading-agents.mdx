@@ -1,0 +1,30 @@
+---
+title: Training Machine Learning Agents for Multi-Asset Trading
+description: A practical guide to building reinforcement-learning agents that co-exist with rule-based strategies.
+publishedAt: 2025-01-08
+tags:
+  - Machine Learning
+  - Trading Bots
+  - Reinforcement Learning
+featured: true
+readingTime: 8
+thumbnail: /images/articles/ml-agents.jpg
+---
+
+# Why Blend ML with Deterministic Logic?
+
+Purely deterministic trading systems excel at repeatability, while machine learning agents shine in adaptive environments. The smartest desks combine both. I outline the hybrid architecture we deploy across forex, equities, and crypto desks.
+
+## Environment Design
+
+I share the OpenAI Gym-inspired environment used to simulate exchange microstructure and transaction costs, complete with Redis-backed experience replay.
+
+## Policy Training
+
+We dive into PyTorch policy gradients, reward shaping, and safe exploration when production capital is on the line.
+
+## Deployment
+
+Finally, we discuss how to ship agents into SmartAlgos alongside traditional EAs, complete with guard rails, observability, and human-in-the-loop controls.
+
+

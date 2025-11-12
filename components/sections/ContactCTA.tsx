@@ -5,17 +5,17 @@ export function ContactCTA() {
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="rounded-2xl bg-primary/5 px-8 py-12 text-center dark:bg-primary/10">
         <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-          Let's Work Together
+          Let&apos;s Build Your Next Trading Edge
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground-secondary">
-          Have a project in mind or want to collaborate? I'd love to hear from you.
+          Collaborate on MT5 expert advisors, machine learning trading agents, fintech platforms, or long-form research.
         </p>
         <div className="mt-8 flex justify-center gap-4">
-          <Button href="/contact" variant="primary">
+          <Button href="/contact" variant="primary" asLink>
             Get in Touch
           </Button>
-          <Button href="/projects" variant="secondary">
-            View My Work
+          <Button href="https://calendly.com/johnwanyaga37/30min" variant="secondary" asLink>
+            Book a Call
           </Button>
         </div>
       </div>

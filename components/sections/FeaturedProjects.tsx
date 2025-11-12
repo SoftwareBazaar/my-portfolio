@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { ExternalLink, Github } from "lucide-react";
@@ -19,23 +20,26 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
       <div className="mb-12 text-center">
         <h2 className="text-4xl font-bold text-foreground">Featured Projects</h2>
         <p className="mt-4 text-lg text-foreground-secondary">
-          A selection of my recent work and side projects
+          Production-ready trading platforms, research tools, and retail intelligence products
         </p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {projects.map((project, index) => {
+          const imageSrc = project.thumbnail || "/images/placeholders/project-placeholder.svg";
+          return (
           <Card key={project.slug} href={`/projects/${project.slug}`}>
             <div className="flex h-full flex-col">
-              {project.thumbnail && (
-                <div className="mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
-                  <img
-                    src={project.thumbnail}
-                    alt={project.title}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              )}
+              <div className="relative mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+                <Image
+                  src={imageSrc}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  priority={index === 0}
+                />
+              </div>
               <div className="flex flex-1 flex-col">
                 <div className="mb-2 flex items-center gap-2">
                   <h3 className="text-xl font-semibold text-foreground">
@@ -98,11 +102,11 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
               </div>
             </div>
           </Card>
-        ))}
+        );})}
       </div>
 
       <div className="mt-12 text-center">
-        <Button href="/projects" variant="secondary">
+        <Button href="/projects" variant="secondary" asLink>
           View All Projects
         </Button>
       </div>

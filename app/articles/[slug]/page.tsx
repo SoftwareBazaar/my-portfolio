@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
 import { getArticleBySlug, getAllArticles } from "@/lib/content";
@@ -86,15 +87,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </div>
         </header>
 
-        {article.thumbnail && (
-          <div className="mb-8 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
-            <img
-              src={article.thumbnail}
-              alt={article.title}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        )}
+        <div className="relative mb-8 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+          <Image
+            src={article.thumbnail || "/images/placeholders/article-placeholder.svg"}
+            alt={article.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw"
+          />
+        </div>
 
         <div className="prose prose-lg mx-auto max-w-none dark:prose-invert">
           <div className="whitespace-pre-wrap">{article.content}</div>

@@ -1,0 +1,30 @@
+---
+title: Building Resilient MT5 Expert Advisors
+description: A blueprint for designing institutional-grade MT5 expert advisors that adapt to market regime shifts.
+publishedAt: 2024-12-15
+tags:
+  - Algorithmic Trading
+  - MT5
+  - Risk Management
+featured: true
+readingTime: 7
+thumbnail: /images/articles/mt5-ea.jpg
+---
+
+# Why MT5 Still Matters
+
+MetaTrader 5 remains the connective tissue between retail and institutional order flow. The platform is ubiquitous, programmable, and battle-tested. In this article I walk through the principles I use when designing MT5 expert advisors (EAs) for SmartAlgos clients.
+
+## Regime Detection First
+
+Every EA I ship begins with a volatility and trend-state detector. Without regime awareness, risk control devolves into guesswork. I showcase a TensorFlow Lite model that classifies eight distinct market states with >90% precision.
+
+## Execution with Intent
+
+Order placement is routed through a latency-sensitive Node.js gateway. We discuss how to balance fill quality, slippage tolerance, and broker constraints without overfitting.
+
+## Wrap-Up
+
+I close with testing frameworks, including walk-forward analysis, Monte Carlo scenario testing, and operational checklists before an EA ever touches capital.
+
+

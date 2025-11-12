@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { ExternalLink } from "lucide-react";
@@ -17,23 +18,25 @@ export function FeaturedCompanies({ companies }: FeaturedCompaniesProps) {
       <div className="mb-12 text-center">
         <h2 className="text-4xl font-bold text-foreground">Companies</h2>
         <p className="mt-4 text-lg text-foreground-secondary">
-          Ventures I've founded and built
+          Ventures I&apos;ve founded and built
         </p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {companies.map((company) => (
+        {companies.map((company) => {
+          const logoSrc = company.logo || "/images/placeholders/company-placeholder.svg";
+          return (
           <Card key={company.slug} href={`/companies/${company.slug}`}>
             <div className="flex h-full flex-col">
-              {company.logo && (
-                <div className="mb-4 flex h-16 items-center">
-                  <img
-                    src={company.logo}
-                    alt={company.name}
-                    className="h-full object-contain"
-                  />
-                </div>
-              )}
+              <div className="relative mb-4 flex h-16 w-full items-center">
+                <Image
+                  src={logoSrc}
+                  alt={company.name}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                />
+              </div>
               <div className="flex flex-1 flex-col">
                 <h3 className="mb-2 text-xl font-semibold text-foreground">
                   {company.name}
@@ -73,11 +76,11 @@ export function FeaturedCompanies({ companies }: FeaturedCompaniesProps) {
               </div>
             </div>
           </Card>
-        ))}
+        );})}
       </div>
 
       <div className="mt-12 text-center">
-        <Button href="/companies" variant="secondary">
+        <Button href="/companies" variant="secondary" asLink>
           View All Companies
         </Button>
       </div>

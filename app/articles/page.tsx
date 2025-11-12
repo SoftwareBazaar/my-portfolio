@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 import { Clock } from "lucide-react";
 import { getAllArticles } from "@/lib/content";
@@ -29,18 +30,20 @@ export default async function ArticlesPage() {
         </div>
       ) : (
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article) => (
+          {articles.map((article) => {
+            const imageSrc = article.thumbnail || "/images/placeholders/article-placeholder.svg";
+            return (
             <Card key={article.slug} href={`/articles/${article.slug}`}>
               <div className="flex h-full flex-col">
-                {article.thumbnail && (
-                  <div className="mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
-                    <img
-                      src={article.thumbnail}
-                      alt={article.title}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                )}
+                <div className="relative mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+                  <Image
+                    src={imageSrc}
+                    alt={article.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
                 <div className="flex flex-1 flex-col">
                   <h3 className="mb-2 text-xl font-semibold text-foreground">
                     {article.title}
@@ -68,7 +71,7 @@ export default async function ArticlesPage() {
                 </div>
               </div>
             </Card>
-          ))}
+          );})}
         </div>
       )}
     </div>

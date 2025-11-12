@@ -1,0 +1,48 @@
+---
+title: Thrift Shop Inventory Platform
+description: Cloud-native inventory platform for modern thrift retail and donation workflows with real-time stock intelligence.
+date: 2024-11-22
+tags:
+  - RetailTech
+  - React
+  - Serverless
+  - Inventory
+featured: true
+status: In Development
+thumbnail: /images/projects/thrift-shop.jpg
+liveUrl: https://thriftshop.example.com
+githubUrl: https://github.com/SoftwareBazaar/thrift-shop-inventory
+---
+
+# Overview
+
+The Thrift Shop Inventory Platform is a full-stack solution purpose-built for community-driven retail. It synchronises intake, cataloguing, pricing, and multi-channel sales so donation centres and boutique thrift stores can move inventory quickly without losing track of provenance or valuation.
+
+## Core Features
+
+- **Unified Cataloguing**: Barcode/SKU assignment at intake, with image capture, donor attribution, and condition grading.
+- **Real-Time Stock Ledger**: Low-stock alerts, transfer workflows between locations, and automatic status changes when items sell online.
+- **Channel Integrations**: REST API hooks out to Shopify, Facebook Marketplace, and internal POS terminals; payment-ready via Stripe.
+- **Role-Based Access**: Staff, volunteer, and auditor profiles with granular permissions and activity logs.
+- **Analytics & Reporting**: Donation trends, revenue per category, salvage vs retail ratios, and exportable audit packs.
+
+## Assumed Stack
+
+| Layer | Technologies | Notes |
+| --- | --- | --- |
+| Frontend | React + Tailwind (deployed on Vercel) | SPA with optimistic UI for speedy stock edits. |
+| Backend | Node.js/Express or Vercel serverless functions | Lightweight REST API with webhook automation. |
+| Database | MongoDB Atlas or Planetscale | Document store tuned for variant-rich inventory data. |
+| Integrations | Stripe payments, barcode scanners, webhook automations | Extensible for donor receipts and fulfilment. |
+
+## Roadmap
+
+- Complete omnichannel order sync and automated donor thank-you workflows.
+- Layer in AI-driven price recommendations using historical comps.
+- Expand reporting to include ESG impact dashboards for grant-making bodies.
+
+## My Role
+
+I architected the data model, built the Vercel deployment pipeline (over 150 iterations to production), and designed the operator experience so staff can work comfortably from laptops, tablets, or a warehouse kiosk.
+
+

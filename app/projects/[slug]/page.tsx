@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 import { ExternalLink, Github, ArrowLeft } from "lucide-react";
@@ -115,15 +116,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           )}
         </header>
 
-        {project.thumbnail && (
-          <div className="mb-8 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
-            <img
-              src={project.thumbnail}
-              alt={project.title}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        )}
+        <div className="relative mb-8 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+          <Image
+            src={project.thumbnail || "/images/placeholders/project-placeholder.svg"}
+            alt={project.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw"
+          />
+        </div>
 
         <div className="prose prose-lg mx-auto max-w-none dark:prose-invert">
           <div className="whitespace-pre-wrap text-foreground-secondary">
