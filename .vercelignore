@@ -1,0 +1,26 @@
+# Vercel ignore file
+# Files and directories to exclude from deployment
+
+# Development files
+.env.local
+.env*.local
+
+# Documentation (optional - remove if you want these deployed)
+ADMIN_SETUP.md
+QUICK_START.md
+README_ADMIN.md
+
+# SQL scripts (not needed in production)
+supabase-setup.sql
+supabase-migration.sql
+supabase-hero-migration.sql
+supabase-settings-migration.sql
+supabase-real-projects.sql
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
