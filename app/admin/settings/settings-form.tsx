@@ -189,6 +189,7 @@ export function SettingsForm({ settings }: SettingsFormProps) {
           {uploading && <p className="text-sm text-slate-400">Uploading...</p>}
           {profileImageUrl && (
             <div className="mt-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={profileImageUrl} alt="Profile preview" className="h-48 w-48 rounded-lg object-cover" />
             </div>
           )}

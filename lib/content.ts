@@ -11,7 +11,7 @@ export interface Project {
   date: string;
   tags: string[];
   featured: boolean;
-  status: "Live" | "In Development" | "Completed";
+  status: "live" | "in_development" | "completed" | "Live" | "In Development" | "Completed";
   thumbnail?: string;
   liveUrl?: string;
   githubUrl?: string;
