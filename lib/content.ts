@@ -54,7 +54,7 @@ function mapProject(row: any): Project {
     date: row.published_at ? new Date(row.published_at).toISOString() : "",
     tags: row.tech_tags ?? [],
     featured: row.featured ?? false,
-    status: row.status ?? "Completed",
+    status: row.status ?? "live",
     thumbnail: row.thumbnail_url ?? undefined,
     liveUrl: row.live_url ?? undefined,
     githubUrl: row.github_url ?? undefined,

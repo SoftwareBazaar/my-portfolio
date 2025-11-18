@@ -47,14 +47,14 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                   </h3>
                   <span
                     className={`rounded-full px-2 py-1 text-xs font-medium ${
-                      project.status === "Live"
+                      project.status === "live" || project.status === "Live"
                         ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                        : project.status === "In Development"
+                        : project.status === "in_development" || project.status === "In Development"
                         ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200"
                         : "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
                     }`}
                   >
-                    {project.status}
+                    {project.status === "live" ? "Live" : project.status === "in_development" ? "In Development" : project.status === "completed" ? "Completed" : project.status}
                   </span>
                 </div>
                 <p className="mb-4 flex-1 text-sm text-foreground-secondary">
