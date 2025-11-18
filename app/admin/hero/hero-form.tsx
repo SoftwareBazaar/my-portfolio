@@ -169,6 +169,7 @@ export function HeroForm({ hero }: HeroFormProps) {
         {uploading && <p className="text-sm text-slate-400">Uploading...</p>}
         {heroImageUrl && (
           <div className="mt-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={heroImageUrl} alt="Hero preview" className="h-48 rounded-lg object-cover" />
           </div>
         )}
@@ -187,6 +188,7 @@ export function HeroForm({ hero }: HeroFormProps) {
         {uploading && <p className="text-sm text-slate-400">Uploading...</p>}
         {backgroundImageUrl && (
           <div className="mt-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={backgroundImageUrl} alt="Background preview" className="h-32 rounded-lg object-cover" />
           </div>
         )}

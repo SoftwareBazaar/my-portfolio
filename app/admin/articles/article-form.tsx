@@ -198,6 +198,7 @@ export function ArticleForm({ article }: ArticleFormProps) {
         {uploading && <p className="text-sm text-slate-400">Uploading...</p>}
         {thumbnailUrl && (
           <div className="mt-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={thumbnailUrl} alt="Thumbnail preview" className="h-32 rounded-lg object-cover" />
           </div>
         )}

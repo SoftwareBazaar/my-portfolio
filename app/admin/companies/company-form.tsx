@@ -162,6 +162,7 @@ export function CompanyForm({ company }: CompanyFormProps) {
         {uploading && <p className="text-sm text-slate-400">Uploading...</p>}
         {logoUrl && (
           <div className="mt-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={logoUrl} alt="Logo preview" className="h-24 w-24 rounded-lg object-cover" />
           </div>
         )}

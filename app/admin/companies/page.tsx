@@ -37,6 +37,7 @@ export default async function AdminCompaniesPage() {
             >
               <div className="flex flex-1 items-center gap-4">
                 {company.logo_url && (
+                  /* eslint-disable-next-line @next/next/no-img-element */
                   <img src={company.logo_url} alt={company.name} className="h-12 w-12 rounded-lg object-cover" />
                 )}
                 <div className="flex-1">
