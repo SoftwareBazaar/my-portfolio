@@ -35,7 +35,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                   src={imageSrc}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   priority={index === 0}
                 />
