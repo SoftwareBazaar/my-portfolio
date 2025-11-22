@@ -25,12 +25,14 @@ export function ProjectForm({ project }: ProjectFormProps) {
     formData.set("thumbnail_url", thumbnailUrl);
 
     try {
+      console.log("Submitting with thumbnail URL:", thumbnailUrl);
       if (project) {
         await updateProject(project.id, formData);
       } else {
         await createProject(formData);
       }
     } catch (error: any) {
+      console.error("Save error:", error);
       alert(error.message || "Failed to save project");
       setLoading(false);
     }
@@ -48,7 +50,9 @@ export function ProjectForm({ project }: ProjectFormProps) {
     try {
       const url = await uploadImage(formData);
       setThumbnailUrl(url);
+      console.log("Image uploaded successfully:", url);
     } catch (error: any) {
+      console.error("Image upload error:", error);
       alert(error.message || "Failed to upload image");
     } finally {
       setUploading(false);

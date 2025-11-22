@@ -51,7 +51,7 @@ VALUES (
   ARRAY['React 18', 'Tailwind', 'Framer Motion', 'Node.js', 'Express', 'Socket.io', 'WebSockets', 'MongoDB', 'Redis', 'Electron', 'Paystack', 'Stripe', 'Chart.js', 'Multisig', 'TensorFlow', 'PyTorch', 'NLP'],
   true,
   'live',
-  '/images/projects/smartalgos.jpg',
+  '/images/placeholders/project-placeholder.svg',
   'https://web-production-fdb58.up.railway.app/',
   NULL
 );
@@ -79,7 +79,7 @@ VALUES (
   ARRAY['React', 'Vercel', 'Tailwind', 'Node.js', 'MongoDB', 'Stripe', 'REST API', 'Barcode/SKU', 'Serverless'],
   true,
   'live',
-  '/images/projects/thrift-shop.jpg',
+  '/images/placeholders/project-placeholder.svg',
   'https://thrift-shop-inventor-git-9a738b-john-wanyagas-projects-3586103c.vercel.app/',
   NULL
 );

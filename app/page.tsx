@@ -10,6 +10,8 @@ import { getFeaturedProjects } from "@/lib/content";
 import { getFeaturedCompanies } from "@/lib/content";
 import { getLatestArticles } from "@/lib/content";
 
+export const revalidate = 0; // Disable caching for this page
+
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects(4);
   const featuredCompanies = await getFeaturedCompanies(3);
