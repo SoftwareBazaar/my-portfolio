@@ -116,12 +116,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           )}
         </header>
 
-        <div className="relative mb-8 aspect-video overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+        <div className="relative mb-8 h-[400px] w-full overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800 md:h-[500px]">
           <Image
             src={project.thumbnail || "/images/placeholders/project-placeholder.svg"}
             alt={project.title}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw"
           />
         </div>
