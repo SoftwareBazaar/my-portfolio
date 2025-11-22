@@ -52,7 +52,10 @@ export async function updateProject(id: string, formData: FormData) {
     throw new Error(error.message);
   }
 
+  // Revalidate all project pages
   revalidatePath("/admin/projects");
+  revalidatePath("/projects");
+  revalidatePath(`/projects/${project.slug}`);
   redirect("/admin/projects");
 }
 
