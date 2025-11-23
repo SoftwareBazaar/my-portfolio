@@ -51,7 +51,10 @@ export async function updateArticle(id: string, formData: FormData) {
     throw new Error(error.message);
   }
 
+  // Revalidate all article pages
   revalidatePath("/admin/articles");
+  revalidatePath("/articles");
+  revalidatePath(`/articles/${article.slug}`);
   redirect("/admin/articles");
 }
 
