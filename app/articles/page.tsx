@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description: "Articles, tutorials, and insights on development and entrepreneurship",
 };
 
+// Revalidate every 60 seconds
+export const revalidate = 60;
+
 export default async function ArticlesPage() {
   const articles = await getAllArticles();
 
