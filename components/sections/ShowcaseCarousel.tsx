@@ -17,34 +17,44 @@ interface CarouselItem {
 
 const slides: CarouselItem[] = [
   {
-    title: "SmartAlgos Alpha Desk",
-    subtitle: "AI-infused execution OS",
+    title: "Algorithmic Trading Systems",
+    subtitle: "MT5 Expert Advisors & ML Agents",
     description:
-      "Blend MT5 expert advisors with machine learning agents. Monitor risk, tweak parameters, and ship updates across desks in seconds.",
-    ctaLabel: "Explore SmartAlgos",
-    ctaHref: "/projects/smartalgos-trading-platform",
+      "Custom-built trading algorithms tailored to your risk profile. From rule-based EAs to reinforcement learning agents—backtested, optimized, and ready for live execution.",
+    ctaLabel: "Book Consultation",
+    ctaHref: "https://calendly.com/johnwanyaga37/30min",
     image: "/images/placeholders/carousel-strategy.svg",
-    badges: ["MT5", "TensorFlow", "Prop Desks"],
+    badges: ["MT5", "Machine Learning", "Live Trading"],
   },
   {
-    title: "Inventory Intelligence",
-    subtitle: "Retail & donation telemetry",
+    title: "Fintech Platform Development",
+    subtitle: "Production-Grade Trading Infrastructure",
     description:
-      "Automate SKU capture, channel syncing, and donation reporting with a Vercel-native cloud stack optimized for the thrift economy.",
-    ctaLabel: "View Thrift Platform",
-    ctaHref: "/projects/thrift-shop-inventory",
+      "Build scalable trading platforms with real-time data pipelines, brokerage integrations, and modern web technologies. From MVP to institutional-grade systems.",
+    ctaLabel: "View Projects",
+    ctaHref: "/projects",
     image: "/images/placeholders/project-placeholder.svg",
-    badges: ["RetailTech", "Realtime Ops", "Stripe"],
+    badges: ["React", "Real-time", "WebSockets"],
   },
   {
-    title: "Research & Writing Lab",
-    subtitle: "Articles, briefs, and academic support",
+    title: "Investment Advisory",
+    subtitle: "Quantitative Portfolio Management",
     description:
-      "Commission market intelligence, whitepapers, and academic deliverables that translate complex fintech and agri-tech systems into action.",
-    ctaLabel: "Browse Articles",
+      "Personalized investment analysis backed by quantitative research. Risk management frameworks, portfolio optimization, and long-term wealth strategies for serious investors.",
+    ctaLabel: "Schedule Call",
+    ctaHref: "https://calendly.com/johnwanyaga37/30min",
+    image: "/images/placeholders/article-placeholder.svg",
+    badges: ["Portfolio Analysis", "Risk Management", "Alpha Generation"],
+  },
+  {
+    title: "Quant Research & Writing",
+    subtitle: "Strategy Analysis & Technical Content",
+    description:
+      "Deep-dive research articles, strategy backtests, and technical documentation for trading desks and fintech teams. Transform complex systems into actionable insights.",
+    ctaLabel: "Read Articles",
     ctaHref: "/articles",
     image: "/images/placeholders/article-placeholder.svg",
-    badges: ["Thought Leadership", "Academic", "Fintech"],
+    badges: ["Backtesting", "Market Analysis", "Documentation"],
   },
 ];
 
@@ -72,7 +82,7 @@ export function ShowcaseCarousel() {
             <div>
               <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
                 <Sparkles className="h-4 w-4" />
-                Signature Workflows
+                Professional Services
               </div>
               <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">{activeSlide.title}</h2>
               <p className="mt-4 text-lg text-slate-200">{activeSlide.subtitle}</p>

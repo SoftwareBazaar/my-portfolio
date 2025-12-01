@@ -60,26 +60,29 @@ export function Services() {
 
       <div className="mt-12 flex flex-col items-center gap-4 text-center">
         <p className="text-sm uppercase tracking-wide text-foreground-secondary">
-          Consulting rate — $10/hour (remote or hybrid engagements)
+          Project-based & retainer engagements available — Starting at $500
+        </p>
+        <p className="text-xs text-foreground-secondary">
+          Hourly consulting: $10/hour for strategy sessions and code reviews
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button
             href="https://calendly.com/johnwanyaga37/30min"
             variant="primary"
-            className="inline-flex items-center gap-2"
+            className="inline-flex items-center gap-2 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40"
             asLink
           >
             <CalendarClock className="h-4 w-4" />
-            Schedule via Calendly
+            Schedule Discovery Call
           </Button>
           <Button
             href="https://wa.me/254746054224"
             variant="secondary"
-            className="inline-flex items-center gap-2"
+            className="inline-flex items-center gap-2 shadow-md hover:shadow-lg"
             asLink
           >
             <MessageCircle className="h-4 w-4" />
-            Chat on WhatsApp
+            Quick Chat on WhatsApp
           </Button>
         </div>
       </div>
