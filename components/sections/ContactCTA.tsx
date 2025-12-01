@@ -8,7 +8,7 @@ export function ContactCTA() {
           Ready to Start Your Next Project?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground-secondary">
-          Whether you need a web application, investment guidance, or technical content—let's discuss how I can help.
+          Whether you need a web application, investment guidance, or technical content—let&apos;s discuss how I can help.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button href="/contact" variant="primary" asLink>
