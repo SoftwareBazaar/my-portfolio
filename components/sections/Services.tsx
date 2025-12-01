@@ -4,27 +4,27 @@ import { CalendarClock, PenTool, LineChart, Bot, MessageCircle, TrendingUp } fro
 const offerings = [
   {
     icon: Bot,
-    title: "Web Application Development",
+    title: "Algorithmic Trading Systems",
     description:
-      "Custom web applications built with React, Next.js, and modern technologies. From MVPs to full-scale platforms.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Stock & Investment Advisory",
-    description:
-      "Personalized investment analysis, risk management, and long-term wealth strategies tailored to your financial goals.",
-  },
-  {
-    icon: PenTool,
-    title: "Technical Writing & Content",
-    description:
-      "Clear, research-backed articles, documentation, and technical content for tech and finance audiences.",
+      "Design and deploy MT5 expert advisors, machine learning trading agents, and rule-based strategies tailored to your risk profile and execution requirements.",
   },
   {
     icon: LineChart,
-    title: "Trading System Consultation",
+    title: "Fintech Platform Development",
     description:
-      "Guidance on trading strategies, fintech concepts, and market analysis. Learning and exploring algorithmic trading together.",
+      "Build production-grade trading platforms, brokerage integrations, and market data pipelines with modern web technologies and real-time architecture.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Investment Advisory & Analysis",
+    description:
+      "Customized portfolio analysis, risk management frameworks, and long-term wealth strategies backed by quantitative research and market intelligence.",
+  },
+  {
+    icon: PenTool,
+    title: "Quant Research & Writing",
+    description:
+      "Deep-dive research articles, strategy backtests, and technical documentation for trading desks, fintech teams, and institutional audiences.",
   },
 ];
 
@@ -32,9 +32,9 @@ export function Services() {
   return (
     <section id="services" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold text-foreground">Services & Consulting</h2>
+        <h2 className="text-4xl font-bold text-foreground">Consulting & Advisory Services</h2>
         <p className="mt-4 text-lg text-foreground-secondary">
-          Professional services in web development, investment advisory, and technical content creation.
+          End-to-end solutions for trading automation, fintech infrastructure, and quantitative strategy development.
         </p>
       </div>
 

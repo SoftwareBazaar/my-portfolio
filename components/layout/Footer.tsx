@@ -20,7 +20,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold text-foreground">John Wanyaga</h3>
             <p className="mt-2 text-sm text-foreground-secondary">
-              Full-stack developer, investment advisor, and technical writer
+              Algorithmic trading, fintech systems, and quantitative research
             </p>
           </div>
 

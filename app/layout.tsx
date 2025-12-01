@@ -19,11 +19,11 @@ const monoFont = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "John Wanyaga | Full-Stack Developer & Investment Advisor",
+    default: "John Wanyaga | Algorithmic Trading & Fintech Systems",
     template: "%s | John Wanyaga",
   },
-  description: "Full-stack developer, investment advisor, and technical writer. Building modern web applications and helping clients grow their wealth through strategic investment guidance.",
-  keywords: ["full-stack developer", "investment advisor", "technical writer", "web development", "stock analysis", "portfolio management"],
+  description: "Algorithmic trader and fintech builder specializing in MT5 expert advisors, machine learning trading agents, and production-grade trading platforms. Quantitative research and investment advisory.",
+  keywords: ["algorithmic trading", "MT5 expert advisors", "fintech", "trading systems", "machine learning", "quantitative research", "investment advisory", "trading platforms"],
   authors: [{ name: "John Wanyaga" }],
   creator: "John Wanyaga",
   openGraph: {
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://johnwanyaga.com",
     siteName: "John Wanyaga",
-    title: "John Wanyaga | Full-Stack Developer & Investment Advisor",
-    description: "Full-stack developer, investment advisor, and technical writer specializing in web applications and investment guidance.",
+    title: "John Wanyaga | Algorithmic Trading & Fintech Systems",
+    description: "Algorithmic trader and fintech builder specializing in MT5 expert advisors, machine learning trading agents, and production-grade trading platforms.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "John Wanyaga | Full-Stack Developer & Investment Advisor",
-    description: "Full-stack developer, investment advisor, and technical writer specializing in web applications and investment guidance.",
+    title: "John Wanyaga | Algorithmic Trading & Fintech Systems",
+    description: "Algorithmic trader and fintech builder specializing in MT5 expert advisors, machine learning trading agents, and production-grade trading platforms.",
   },
   robots: {
     index: true,

@@ -1,19 +1,19 @@
 const skillCategories = [
   {
-    name: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"],
+    name: "Trading & Automation",
+    skills: ["MT5 Expert Advisors", "MQL5", "Algorithmic Strategies", "Backtesting", "Live Execution"],
   },
   {
-    name: "Backend",
-    skills: ["Node.js", "Express", "Supabase", "PostgreSQL", "REST APIs"],
+    name: "Machine Learning & Quant",
+    skills: ["TensorFlow", "PyTorch", "Reinforcement Learning", "Time Series Analysis", "Statistical Modeling"],
   },
   {
-    name: "Investment & Finance",
-    skills: ["Stock Analysis", "Portfolio Management", "Risk Assessment", "Market Research", "Financial Planning"],
+    name: "Fintech Stack",
+    skills: ["React", "Next.js", "Node.js", "PostgreSQL", "Real-time Data Pipelines"],
   },
   {
-    name: "Tools & Content",
-    skills: ["Git", "Vercel", "Technical Writing", "Research", "Documentation"],
+    name: "Research & Advisory",
+    skills: ["Quantitative Research", "Risk Management", "Portfolio Optimization", "Market Analysis", "Technical Writing"],
   },
 ];
 
