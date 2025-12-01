@@ -97,8 +97,75 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           />
         </div>
 
-        <div className="prose prose-lg mx-auto max-w-none dark:prose-invert">
-          <div className="whitespace-pre-wrap">{article.content}</div>
+        <div className="prose prose-lg mx-auto max-w-none">
+          <div 
+            className="article-content"
+            dangerouslySetInnerHTML={{ 
+              __html: article.content
+                .split('\n\n')
+                .map(paragraph => {
+                  // Handle headings
+                  if (paragraph.startsWith('# ')) {
+                    return `<h1>${paragraph.slice(2)}</h1>`;
+                  }
+                  if (paragraph.startsWith('## ')) {
+                    return `<h2>${paragraph.slice(3)}</h2>`;
+                  }
+                  if (paragraph.startsWith('### ')) {
+                    return `<h3>${paragraph.slice(4)}</h3>`;
+                  }
+                  if (paragraph.startsWith('#### ')) {
+                    return `<h4>${paragraph.slice(5)}</h4>`;
+                  }
+                  if (paragraph.startsWith('##### ')) {
+                    return `<h5>${paragraph.slice(6)}</h5>`;
+                  }
+                  if (paragraph.startsWith('###### ')) {
+                    return `<h6>${paragraph.slice(7)}</h6>`;
+                  }
+                  
+                  // Handle blockquotes
+                  if (paragraph.startsWith('> ')) {
+                    return `<blockquote>${paragraph.slice(2).replace(/\n> /g, '<br>')}</blockquote>`;
+                  }
+                  
+                  // Handle lists
+                  if (paragraph.match(/^[\*\-] /m)) {
+                    const items = paragraph.split('\n').filter(line => line.trim());
+                    const listItems = items.map(item => `<li>${item.replace(/^[\*\-] /, '')}</li>`).join('');
+                    return `<ul>${listItems}</ul>`;
+                  }
+                  
+                  if (paragraph.match(/^\d+\. /m)) {
+                    const items = paragraph.split('\n').filter(line => line.trim());
+                    const listItems = items.map(item => `<li>${item.replace(/^\d+\. /, '')}</li>`).join('');
+                    return `<ol>${listItems}</ol>`;
+                  }
+                  
+                  // Handle horizontal rules
+                  if (paragraph.match(/^---+$/)) {
+                    return '<hr>';
+                  }
+                  
+                  // Handle code blocks
+                  if (paragraph.startsWith('```')) {
+                    const code = paragraph.replace(/```\w*\n?/, '').replace(/```$/, '');
+                    return `<pre><code>${code}</code></pre>`;
+                  }
+                  
+                  // Regular paragraphs with inline formatting
+                  let formatted = paragraph
+                    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+                    .replace(/`(.+?)`/g, '<code>$1</code>')
+                    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>')
+                    .replace(/\n/g, '<br>');
+                  
+                  return `<p>${formatted}</p>`;
+                })
+                .join('')
+            }}
+          />
         </div>
       </article>
     </div>

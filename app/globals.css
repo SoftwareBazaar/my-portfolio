@@ -51,3 +51,101 @@
   }
 }
 
+/* Article Content Styling */
+.prose {
+  @apply text-foreground;
+}
+
+.prose h1 {
+  @apply mb-6 mt-8 text-4xl font-bold leading-tight text-foreground;
+  @apply border-b-2 border-primary/20 pb-3;
+}
+
+.prose h2 {
+  @apply mb-5 mt-10 text-3xl font-bold leading-snug text-foreground;
+  @apply relative pl-4 before:absolute before:left-0 before:top-1 before:h-8 before:w-1 before:bg-primary before:content-[''];
+}
+
+.prose h3 {
+  @apply mb-4 mt-8 text-2xl font-semibold text-foreground;
+  @apply flex items-center gap-2 before:h-2 before:w-2 before:rounded-full before:bg-primary before:content-[''];
+}
+
+.prose h4 {
+  @apply mb-3 mt-6 text-xl font-semibold text-foreground;
+}
+
+.prose h5 {
+  @apply mb-3 mt-5 text-lg font-semibold text-foreground;
+}
+
+.prose h6 {
+  @apply mb-2 mt-4 text-base font-semibold uppercase tracking-wide text-foreground-secondary;
+}
+
+.prose p {
+  @apply mb-5 leading-relaxed text-foreground;
+}
+
+.prose strong {
+  @apply font-semibold text-foreground;
+}
+
+.prose em {
+  @apply italic text-foreground;
+}
+
+.prose a {
+  @apply text-primary underline decoration-primary/30 underline-offset-2 transition-colors hover:decoration-primary;
+}
+
+.prose ul {
+  @apply mb-5 ml-6 list-disc space-y-2;
+}
+
+.prose ol {
+  @apply mb-5 ml-6 list-decimal space-y-2;
+}
+
+.prose li {
+  @apply leading-relaxed text-foreground;
+  @apply pl-2;
+}
+
+.prose blockquote {
+  @apply my-6 border-l-4 border-primary bg-gray-50 py-4 pl-6 pr-4 italic text-foreground-secondary dark:bg-gray-900;
+  @apply rounded-r-lg;
+}
+
+.prose code {
+  @apply rounded bg-gray-100 px-2 py-1 text-sm font-mono text-primary dark:bg-gray-800;
+}
+
+.prose pre {
+  @apply my-6 overflow-x-auto rounded-lg bg-gray-900 p-4 text-sm text-gray-100;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-gray-100;
+}
+
+.prose img {
+  @apply my-8 rounded-lg shadow-lg;
+}
+
+.prose hr {
+  @apply my-8 border-t-2 border-gray-200 dark:border-gray-800;
+}
+
+.prose table {
+  @apply my-6 w-full border-collapse overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800;
+}
+
+.prose th {
+  @apply bg-gray-100 px-4 py-3 text-left font-semibold text-foreground dark:bg-gray-800;
+}
+
+.prose td {
+  @apply border-t border-gray-200 px-4 py-3 text-foreground dark:border-gray-800;
+}
+
