@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/Button";
-import { CalendarClock, PenTool, LineChart, Bot, MessageCircle } from "lucide-react";
+import { CalendarClock, PenTool, LineChart, Bot, MessageCircle, TrendingUp } from "lucide-react";
 
 const offerings = [
   {
@@ -13,6 +13,12 @@ const offerings = [
     title: "Quant & Fintech Strategy",
     description:
       "Advisory on platform architecture, brokerage integrations, and market data automation for trading desks.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Stock & Investment Advisory",
+    description:
+      "Customized investment analysis, risk management, and long-term wealth strategies. Building toward hedge fund management excellence.",
   },
   {
     icon: PenTool,
@@ -32,7 +38,7 @@ export function Services() {
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {offerings.map((service) => {
           const Icon = service.icon;
           return (
