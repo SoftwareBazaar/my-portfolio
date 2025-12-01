@@ -21,9 +21,9 @@ export function Button({
 
   const variants = {
     primary:
-      "bg-primary text-white hover:bg-primary-dark focus:ring-primary",
+      "bg-primary text-white hover:bg-primary-dark focus:ring-primary hover:scale-105 active:scale-100",
     secondary:
-      "bg-gray-200 text-foreground hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring-gray-500",
+      "bg-gray-200 text-foreground hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring-gray-500 hover:scale-105 active:scale-100",
     ghost:
       "text-foreground-secondary hover:bg-gray-100 hover:text-foreground dark:hover:bg-gray-800 focus:ring-gray-500",
   };

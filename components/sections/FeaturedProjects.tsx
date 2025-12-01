@@ -57,9 +57,23 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
                     {project.status === "live" ? "Live" : project.status === "in_development" ? "In Development" : project.status === "completed" ? "Completed" : project.status}
                   </span>
                 </div>
-                <p className="mb-4 flex-1 text-sm text-foreground-secondary">
+                <p className="mb-3 flex-1 text-sm text-foreground-secondary">
                   {project.description}
                 </p>
+                {/* Impact statement for key projects */}
+                {project.slug === 'smartalgos-trading-platform' && (
+                  <p className="mb-4 text-xs font-medium text-primary">
+                    ⚡ Supports multi-asset execution across MT5 desks with real-time risk monitoring
+                  </p>
+                )}
+                {project.slug === 'thrift-shop-inventory' && (
+                  <p className="mb-4 text-xs font-medium text-primary">
+                    ⚡ Cuts manual inventory tracking by 80% for small retailers and donation centers
+                  </p>
+                )}
+                {!['smartalgos-trading-platform', 'thrift-shop-inventory'].includes(project.slug) && (
+                  <div className="mb-4" />
+                )}
                 <div className="mb-4 flex flex-wrap gap-2">
                   {project.tags.slice(0, 3).map((tag) => (
                     <span

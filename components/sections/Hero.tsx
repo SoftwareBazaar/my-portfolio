@@ -91,11 +91,11 @@ export async function Hero() {
             )}
 
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-4">
               {primaryButtonText && primaryButtonLink && (
                 <a
                   href={primaryButtonLink}
-                  className="group inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30"
+                  className="group inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 active:scale-100 min-h-[48px]"
                 >
                   {primaryButtonText}
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -106,7 +106,7 @@ export async function Hero() {
                   href={secondaryButtonLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 rounded-lg border-2 border-foreground/10 bg-background px-6 py-3 text-base font-semibold text-foreground transition-all hover:border-primary/30 hover:bg-primary/5"
+                  className="group inline-flex items-center justify-center gap-2 rounded-lg border-2 border-foreground/10 bg-background px-6 py-3 text-base font-semibold text-foreground transition-all hover:border-primary/30 hover:bg-primary/5 hover:scale-105 active:scale-100 min-h-[48px]"
                 >
                   <Calendar className="h-5 w-5" />
                   {secondaryButtonText}

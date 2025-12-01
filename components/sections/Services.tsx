@@ -36,6 +36,9 @@ export function Services() {
         <p className="mt-4 text-lg text-foreground-secondary">
           End-to-end solutions for trading automation, fintech infrastructure, and quantitative strategy development.
         </p>
+        <p className="mt-3 text-sm font-medium text-primary">
+          Ideal for small prop desks, boutique advisory firms, and fintech startups
+        </p>
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
