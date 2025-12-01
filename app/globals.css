@@ -80,7 +80,7 @@
 }
 
 .prose h6 {
-  @apply mb-2 mt-4 text-base font-semibold uppercase tracking-wide text-foreground-secondary;
+  @apply mb-2 mt-4 text-base font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400;
 }
 
 .prose p {
@@ -113,7 +113,7 @@
 }
 
 .prose blockquote {
-  @apply my-6 border-l-4 border-primary bg-gray-50 py-4 pl-6 pr-4 italic text-foreground-secondary dark:bg-gray-900;
+  @apply my-6 border-l-4 border-primary bg-gray-50 py-4 pl-6 pr-4 italic text-gray-600 dark:bg-gray-900 dark:text-gray-400;
   @apply rounded-r-lg;
 }
 
