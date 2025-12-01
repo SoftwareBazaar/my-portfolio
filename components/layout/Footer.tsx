@@ -18,9 +18,9 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-foreground">Portfolio</h3>
+            <h3 className="text-lg font-bold text-foreground">John Wanyaga</h3>
             <p className="mt-2 text-sm text-foreground-secondary">
-              Algorithmic trader, fintech builder, and writer
+              Full-stack developer, investment advisor, and technical writer
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className="mt-8 border-t border-gray-200 pt-8 dark:border-gray-800">
           <p className="text-center text-sm text-foreground-secondary">
-            © {currentYear} Portfolio. All rights reserved.
+            © {currentYear} John Wanyaga. All rights reserved.
           </p>
         </div>
       </div>

@@ -5,10 +5,10 @@ export function ContactCTA() {
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="rounded-2xl bg-primary/5 px-8 py-12 text-center dark:bg-primary/10">
         <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-          Let&apos;s Build Your Next Trading Edge
+          Ready to Start Your Next Project?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground-secondary">
-          Collaborate on MT5 expert advisors, machine learning trading agents, fintech platforms, or long-form research.
+          Whether you need a web application, investment guidance, or technical content—let's discuss how I can help.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button href="/contact" variant="primary" asLink>

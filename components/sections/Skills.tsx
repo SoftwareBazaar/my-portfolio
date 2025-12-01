@@ -1,19 +1,19 @@
 const skillCategories = [
   {
     name: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Electron"],
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"],
   },
   {
     name: "Backend",
-    skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "Redis"],
+    skills: ["Node.js", "Express", "Supabase", "PostgreSQL", "REST APIs"],
   },
   {
-    name: "Trading & AI",
-    skills: ["MT5 EAs", "TensorFlow", "PyTorch", "Reinforcement Learning", "Quant Research"],
+    name: "Investment & Finance",
+    skills: ["Stock Analysis", "Portfolio Management", "Risk Assessment", "Market Research", "Financial Planning"],
   },
   {
-    name: "Tools & Others",
-    skills: ["Docker", "CI/CD", "Vercel", "Stripe", "Technical Writing"],
+    name: "Tools & Content",
+    skills: ["Git", "Vercel", "Technical Writing", "Research", "Documentation"],
   },
 ];
 
@@ -27,7 +27,7 @@ export function Skills() {
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {skillCategories.map((category) => (
           <div key={category.name} className="text-center">
             <h3 className="mb-4 text-xl font-semibold text-foreground">

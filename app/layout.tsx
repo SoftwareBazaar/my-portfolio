@@ -19,25 +19,25 @@ const monoFont = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Portfolio | Developer & Founder",
-    template: "%s | Portfolio",
+    default: "John Wanyaga | Full-Stack Developer & Investment Advisor",
+    template: "%s | John Wanyaga",
   },
-  description: "Portfolio website showcasing projects, companies, and articles",
-  keywords: ["developer", "founder", "portfolio", "software engineer"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  description: "Full-stack developer, investment advisor, and technical writer. Building modern web applications and helping clients grow their wealth through strategic investment guidance.",
+  keywords: ["full-stack developer", "investment advisor", "technical writer", "web development", "stock analysis", "portfolio management"],
+  authors: [{ name: "John Wanyaga" }],
+  creator: "John Wanyaga",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourname.com",
-    siteName: "Portfolio",
-    title: "Portfolio | Developer & Founder",
-    description: "Portfolio website showcasing projects, companies, and articles",
+    url: "https://johnwanyaga.com",
+    siteName: "John Wanyaga",
+    title: "John Wanyaga | Full-Stack Developer & Investment Advisor",
+    description: "Full-stack developer, investment advisor, and technical writer specializing in web applications and investment guidance.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio | Developer & Founder",
-    description: "Portfolio website showcasing projects, companies, and articles",
+    title: "John Wanyaga | Full-Stack Developer & Investment Advisor",
+    description: "Full-stack developer, investment advisor, and technical writer specializing in web applications and investment guidance.",
   },
   robots: {
     index: true,

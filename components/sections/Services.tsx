@@ -4,27 +4,27 @@ import { CalendarClock, PenTool, LineChart, Bot, MessageCircle, TrendingUp } fro
 const offerings = [
   {
     icon: Bot,
-    title: "Algorithmic Trading Systems",
+    title: "Web Application Development",
     description:
-      "Designing MT5 expert advisors, high-frequency bots, and machine learning agents aligned with your risk appetite.",
-  },
-  {
-    icon: LineChart,
-    title: "Quant & Fintech Strategy",
-    description:
-      "Advisory on platform architecture, brokerage integrations, and market data automation for trading desks.",
+      "Custom web applications built with React, Next.js, and modern technologies. From MVPs to full-scale platforms.",
   },
   {
     icon: TrendingUp,
     title: "Stock & Investment Advisory",
     description:
-      "Customized investment analysis, risk management, and long-term wealth strategies. Building toward hedge fund management excellence.",
+      "Personalized investment analysis, risk management, and long-term wealth strategies tailored to your financial goals.",
   },
   {
     icon: PenTool,
-    title: "Article & Academic Writing",
+    title: "Technical Writing & Content",
     description:
-      "Thought leadership, research-backed articles, and academic deliverables for finance and agri-tech audiences.",
+      "Clear, research-backed articles, documentation, and technical content for tech and finance audiences.",
+  },
+  {
+    icon: LineChart,
+    title: "Trading System Consultation",
+    description:
+      "Guidance on trading strategies, fintech concepts, and market analysis. Learning and exploring algorithmic trading together.",
   },
 ];
 
@@ -32,9 +32,9 @@ export function Services() {
   return (
     <section id="services" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold text-foreground">Consulting & Writing Services</h2>
+        <h2 className="text-4xl font-bold text-foreground">Services & Consulting</h2>
         <p className="mt-4 text-lg text-foreground-secondary">
-          Book time for trading automation, fintech product strategy, or bespoke writing engagements.
+          Professional services in web development, investment advisory, and technical content creation.
         </p>
       </div>
 

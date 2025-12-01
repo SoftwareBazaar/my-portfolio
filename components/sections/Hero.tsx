@@ -12,9 +12,9 @@ export async function Hero() {
     .single();
 
   // Fallback to default values if no hero settings exist
-  const title = hero?.title || "Algorithmic Trader, Fintech Builder, Writer & Article Author";
+  const title = hero?.title || "Full-Stack Developer, Investment Advisor & Technical Writer";
   const subtitle = hero?.subtitle || "Hi, I'm John Wanyaga";
-  const description = hero?.description || "I design MT5 expert advisors, machine learning trading agents, and full-stack fintech platforms—then document the journey through deep research and actionable articles.";
+  const description = hero?.description || "I build modern web applications, provide stock and investment advisory services, and create in-depth technical content. Passionate about fintech, trading systems, and helping clients grow their wealth.";
   const primaryButtonText = hero?.primary_button_text || "View Projects";
   const primaryButtonLink = hero?.primary_button_link || "/projects";
   const secondaryButtonText = hero?.secondary_button_text || "Book a Discovery Call";
@@ -115,13 +115,13 @@ export async function Hero() {
             <div className="mt-10 flex flex-wrap gap-3">
               <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm">
                 <Sparkles className="h-4 w-4" />
-                MT5 & ML Trading Agents
+                Full-Stack Development
               </div>
               <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm">
-                Quant Research & Writing
+                Investment Advisory
               </div>
               <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm">
-                Fintech Architecture
+                Technical Writing
               </div>
             </div>
           </div>
